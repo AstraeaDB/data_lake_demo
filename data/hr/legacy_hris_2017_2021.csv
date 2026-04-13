@@ -1,0 +1,493 @@
+employee_id,name,department,job_role,hire_date,termination_date,salary,performance_rating,years_at_company,overtime_flag,snapshot_date
+EMP-0008,Gina Moore,Engineering,Senior Software Engineer,2017-01-17,2018-06-11,123333,4,1.0,N,2017-12-31
+EMP-0012,Jamie Arnold,Operations,Facilities Manager,2016-03-09,2017-03-04,139423,4,1.8,N,2017-12-31
+EMP-0013,Lisa Hensley,Human Resources,HR Manager,2015-02-21,,121631,4,2.9,N,2017-12-31
+EMP-0015,Dylan Miller,Operations,Facilities Manager,2015-06-07,,135173,3,2.6,N,2017-12-31
+EMP-0016,Brian Ramirez,Operations,Operations Manager,2017-12-11,,142749,4,0.1,Y,2017-12-31
+EMP-0030,Anthony Rodriguez,Legal,Contract Manager,2017-08-05,,114419,3,0.4,N,2017-12-31
+EMP-0034,Nathan Maldonado,Engineering,QA Engineer,2015-05-19,,101307,3,2.6,N,2017-12-31
+EMP-0036,Jeffrey Chavez,Sales,VP Sales,2017-07-06,,186781,3,0.5,N,2017-12-31
+EMP-0043,Sherry Decker,Engineering,Staff Engineer,2015-01-18,,247073,2,3.0,N,2017-12-31
+EMP-0046,Philip Cannon,Sales,VP Sales,2015-10-24,2017-05-16,185875,4,2.2,N,2017-12-31
+EMP-0047,John Pierce,Human Resources,HR Business Partner,2017-01-14,,97821,4,1.0,N,2017-12-31
+EMP-0049,Joshua Blair,Sales,Sales Engineer,2017-05-20,,127116,3,0.6,N,2017-12-31
+EMP-0051,Jessica Holmes,Finance,Financial Analyst,2015-11-27,,119782,4,2.1,N,2017-12-31
+EMP-0059,Brent Jordan,Engineering,Site Reliability Engineer,2016-08-04,,72085,4,1.4,N,2017-12-31
+EMP-0060,John Daniel,Marketing,Brand Manager,2016-06-28,,167002,3,1.5,N,2017-12-31
+EMP-0071,Jordan Henderson,IT,Network Engineer,2016-04-18,2019-03-04,113193,4,1.7,N,2017-12-31
+EMP-0072,Whitney Peters,Operations,Operations Manager,2015-12-12,,145211,2,2.1,N,2017-12-31
+EMP-0076,Sarah Moore,Engineering,Senior Software Engineer,2015-03-24,,124969,4,2.8,N,2017-12-31
+EMP-0078,Megan Young,Sales,VP Sales,2017-02-05,,230138,4,0.9,N,2017-12-31
+EMP-0079,Steve Sanchez,Sales,Sales Engineer,2016-11-21,,116581,3,1.1,N,2017-12-31
+EMP-0080,Lisa Barnes,Legal,Compliance Officer,2016-06-14,,95012,4,1.5,N,2017-12-31
+EMP-0082,Mike Allen,Human Resources,Compensation Analyst,2016-10-17,,83152,3,1.2,Y,2017-12-31
+EMP-0092,Brian Rodriguez,Marketing,Digital Marketing Specialist,2017-10-05,,70938,3,0.2,N,2017-12-31
+EMP-0096,Anna Henderson,Sales,Business Development Rep,2017-06-12,,93538,4,0.6,N,2017-12-31
+EMP-0099,Jessica Smith,Finance,Controller,2015-06-10,,94654,4,2.6,N,2017-12-31
+EMP-0100,Stephen Mckee,Sales,VP Sales,2016-09-25,,223580,4,1.3,N,2017-12-31
+EMP-0101,Sandra Aguilar,Operations,Facilities Manager,2017-12-15,2020-05-03,141265,2,0.0,N,2017-12-31
+EMP-0103,Rebecca Valencia,Engineering,Senior Software Engineer,2015-11-16,,188037,3,2.1,N,2017-12-31
+EMP-0105,Richard Henson,Marketing,Digital Marketing Specialist,2016-06-08,2017-06-03,112932,3,1.6,N,2017-12-31
+EMP-0107,Sharon Cherry,IT,Database Administrator,2015-04-14,,104123,4,2.7,N,2017-12-31
+EMP-0111,Richard Rodriguez,Operations,Logistics Coordinator,2015-04-02,,106151,4,2.7,N,2017-12-31
+EMP-0112,Shannon Walker,Human Resources,HR Manager,2015-11-11,,176165,2,2.1,N,2017-12-31
+EMP-0119,Victor Baker,Human Resources,HR Manager,2016-09-18,,134710,3,1.3,N,2017-12-31
+EMP-0120,Jeffrey Chandler,Engineering,Site Reliability Engineer,2015-06-18,,125345,2,2.5,N,2017-12-31
+EMP-0122,Kenneth Scott,Sales,Sales Representative,2015-02-17,,82864,3,2.9,N,2017-12-31
+EMP-0134,Daniel Kennedy,Human Resources,Compensation Analyst,2015-06-11,,113647,3,2.6,N,2017-12-31
+EMP-0136,Jose Schultz,Operations,Process Improvement Specialist,2017-07-23,,117079,4,0.4,N,2017-12-31
+EMP-0137,Robert Potter,Engineering,DevOps Engineer,2017-08-18,,111072,4,0.4,N,2017-12-31
+EMP-0141,Cheyenne Horton,Sales,Account Executive,2016-07-11,,113850,3,1.5,N,2017-12-31
+EMP-0147,Victoria Larson,IT,Security Analyst,2016-08-10,,102258,4,1.4,N,2017-12-31
+EMP-0149,Kathy Rivas,Marketing,Brand Manager,2016-10-04,2020-02-16,142282,2,1.2,N,2017-12-31
+EMP-0150,Stephanie Manning,Engineering,Site Reliability Engineer,2016-11-07,,74293,2,1.1,N,2017-12-31
+EMP-0153,Denise Jones,Engineering,QA Engineer,2017-11-24,,90017,4,0.1,N,2017-12-31
+EMP-0161,Paul Castaneda,Marketing,Brand Manager,2015-02-07,,150598,4,2.9,N,2017-12-31
+EMP-0167,Alyssa Long,Engineering,Software Engineer,2015-04-17,,118419,5,2.7,Y,2017-12-31
+EMP-0171,Jamie Walton,Finance,Accounts Payable Specialist,2016-09-02,,101492,3,1.3,Y,2017-12-31
+EMP-0172,Darlene Miller,Sales,Sales Engineer,2017-06-01,,76882,4,0.6,N,2017-12-31
+EMP-0175,Nicole Herring,Operations,Operations Analyst,2017-11-19,,116013,5,0.1,N,2017-12-31
+EMP-0176,Alex Hernandez,Sales,Account Executive,2017-12-13,,71200,3,0.0,N,2017-12-31
+EMP-0184,Ashley Barton,Engineering,Senior Software Engineer,2015-06-23,,133591,5,2.5,N,2017-12-31
+EMP-0185,Lindsay Martinez,Engineering,Engineering Manager,2016-01-04,,176026,3,2.0,N,2017-12-31
+EMP-0191,Debra Morton,Engineering,Senior Software Engineer,2017-11-23,,127835,4,0.1,Y,2017-12-31
+EMP-0192,Karen Graham,Legal,Paralegal,2017-09-13,,104160,4,0.3,N,2017-12-31
+EMP-0193,Debra Christian,Engineering,Site Reliability Engineer,2017-08-10,2019-09-29,107484,3,0.4,Y,2017-12-31
+EMP-0198,Spencer Haynes,Engineering,Staff Engineer,2015-10-12,,203447,4,2.2,N,2017-12-31
+EMP-0001,Allison Hill,Sales,Sales Representative,2018-09-25,,112421,3,0.3,N,2018-12-31
+EMP-0007,Abigail Shaffer,Engineering,Software Engineer,2018-05-07,,116346,3,0.7,N,2018-12-31
+EMP-0008,Gina Moore,Engineering,Senior Software Engineer,2017-01-17,2018-06-11,128513,4,2.0,Y,2018-12-31
+EMP-0013,Lisa Hensley,Human Resources,HR Manager,2015-02-21,,128720,3,3.9,N,2018-12-31
+EMP-0015,Dylan Miller,Operations,Facilities Manager,2015-06-07,,135948,3,3.6,Y,2018-12-31
+EMP-0016,Brian Ramirez,Operations,Operations Manager,2017-12-11,,145678,3,1.1,N,2018-12-31
+EMP-0020,Carla Gray,Engineering,DevOps Engineer,2018-06-14,2022-05-24,107830,3,0.5,N,2018-12-31
+EMP-0024,Tommy Walter,Human Resources,HR Generalist,2018-03-21,,119833,3,0.8,N,2018-12-31
+EMP-0025,Matthew Foster,Legal,Contract Manager,2018-02-15,2020-12-31,153591,2,0.9,N,2018-12-31
+EMP-0026,Judy Baker,Operations,Process Improvement Specialist,2018-11-09,,97303,4,0.1,N,2018-12-31
+EMP-0030,Anthony Rodriguez,Legal,Contract Manager,2017-08-05,,117632,2,1.4,N,2018-12-31
+EMP-0034,Nathan Maldonado,Engineering,QA Engineer,2015-05-19,,107119,4,3.6,N,2018-12-31
+EMP-0036,Jeffrey Chavez,Sales,VP Sales,2017-07-06,,190204,3,1.5,N,2018-12-31
+EMP-0039,Elizabeth Fowler,Engineering,Engineering Manager,2018-12-14,,172533,3,0.0,N,2018-12-31
+EMP-0043,Sherry Decker,Engineering,Staff Engineer,2015-01-18,,246595,3,4.0,N,2018-12-31
+EMP-0045,Angelica Tucker,Operations,Process Improvement Specialist,2018-02-18,,107584,4,0.9,N,2018-12-31
+EMP-0047,John Pierce,Human Resources,HR Business Partner,2017-01-14,,102166,5,2.0,N,2018-12-31
+EMP-0049,Joshua Blair,Sales,Sales Engineer,2017-05-20,,128779,2,1.6,Y,2018-12-31
+EMP-0051,Jessica Holmes,Finance,Financial Analyst,2015-11-27,,124895,4,3.1,N,2018-12-31
+EMP-0056,Michael Lewis,Engineering,Staff Engineer,2018-08-18,2020-02-09,160445,5,0.4,N,2018-12-31
+EMP-0059,Brent Jordan,Engineering,Site Reliability Engineer,2016-08-04,,70818,5,2.4,N,2018-12-31
+EMP-0060,John Daniel,Marketing,Brand Manager,2016-06-28,,168322,4,2.5,N,2018-12-31
+EMP-0071,Jordan Henderson,IT,Network Engineer,2016-04-18,2019-03-04,119324,4,2.7,N,2018-12-31
+EMP-0072,Whitney Peters,Operations,Operations Manager,2015-12-12,,154879,5,3.1,N,2018-12-31
+EMP-0074,Lauren Daniels,Marketing,Content Strategist,2018-10-07,,87363,4,0.2,Y,2018-12-31
+EMP-0076,Sarah Moore,Engineering,Senior Software Engineer,2015-03-24,,129565,4,3.8,N,2018-12-31
+EMP-0078,Megan Young,Sales,VP Sales,2017-02-05,,233522,3,1.9,N,2018-12-31
+EMP-0079,Steve Sanchez,Sales,Sales Engineer,2016-11-21,,122601,5,2.1,N,2018-12-31
+EMP-0080,Lisa Barnes,Legal,Compliance Officer,2016-06-14,,100287,2,2.5,N,2018-12-31
+EMP-0082,Mike Allen,Human Resources,Compensation Analyst,2016-10-17,,86684,5,2.2,N,2018-12-31
+EMP-0086,Daniel Baker,Engineering,Senior Software Engineer,2018-09-04,,147908,3,0.3,Y,2018-12-31
+EMP-0087,Shirley Suarez,Engineering,DevOps Engineer,2018-03-25,,75161,4,0.8,N,2018-12-31
+EMP-0092,Brian Rodriguez,Marketing,Digital Marketing Specialist,2017-10-05,,76021,4,1.2,N,2018-12-31
+EMP-0096,Anna Henderson,Sales,Business Development Rep,2017-06-12,,98459,3,1.6,N,2018-12-31
+EMP-0099,Jessica Smith,Finance,Controller,2015-06-10,,102486,4,3.6,N,2018-12-31
+EMP-0100,Stephen Mckee,Sales,VP Sales,2016-09-25,,228882,3,2.3,Y,2018-12-31
+EMP-0101,Sandra Aguilar,Operations,Facilities Manager,2017-12-15,2020-05-03,144238,5,1.0,N,2018-12-31
+EMP-0103,Rebecca Valencia,Engineering,Senior Software Engineer,2015-11-16,,187395,4,3.1,N,2018-12-31
+EMP-0107,Sharon Cherry,IT,Database Administrator,2015-04-14,,107079,3,3.7,N,2018-12-31
+EMP-0111,Richard Rodriguez,Operations,Logistics Coordinator,2015-04-02,,115342,4,3.7,N,2018-12-31
+EMP-0112,Shannon Walker,Human Resources,HR Manager,2015-11-11,,176339,5,3.1,N,2018-12-31
+EMP-0119,Victor Baker,Human Resources,HR Manager,2016-09-18,,137176,3,2.3,N,2018-12-31
+EMP-0120,Jeffrey Chandler,Engineering,Site Reliability Engineer,2015-06-18,,134229,4,3.5,N,2018-12-31
+EMP-0122,Kenneth Scott,Sales,Sales Representative,2015-02-17,,86337,3,3.9,N,2018-12-31
+EMP-0127,Michelle Evans,Marketing,Brand Manager,2018-03-04,2020-08-20,166599,5,0.8,Y,2018-12-31
+EMP-0134,Daniel Kennedy,Human Resources,Compensation Analyst,2015-06-11,,114295,3,3.6,N,2018-12-31
+EMP-0136,Jose Schultz,Operations,Process Improvement Specialist,2017-07-23,,121022,2,1.4,Y,2018-12-31
+EMP-0137,Robert Potter,Engineering,DevOps Engineer,2017-08-18,,112430,2,1.4,N,2018-12-31
+EMP-0141,Cheyenne Horton,Sales,Account Executive,2016-07-11,,115194,4,2.5,N,2018-12-31
+EMP-0145,Amber Wright,Marketing,Growth Engineer,2018-03-20,,121791,3,0.8,N,2018-12-31
+EMP-0147,Victoria Larson,IT,Security Analyst,2016-08-10,,108683,4,2.4,N,2018-12-31
+EMP-0149,Kathy Rivas,Marketing,Brand Manager,2016-10-04,2020-02-16,146680,2,2.2,N,2018-12-31
+EMP-0150,Stephanie Manning,Engineering,Site Reliability Engineer,2016-11-07,,76492,3,2.1,Y,2018-12-31
+EMP-0153,Denise Jones,Engineering,QA Engineer,2017-11-24,,93042,2,1.1,N,2018-12-31
+EMP-0161,Paul Castaneda,Marketing,Brand Manager,2015-02-07,,157651,2,3.9,N,2018-12-31
+EMP-0164,Jeffrey Johnson,Operations,Process Improvement Specialist,2018-12-05,2022-04-18,103152,3,0.1,N,2018-12-31
+EMP-0165,Michael Powell,Marketing,Digital Marketing Specialist,2018-08-18,,88711,3,0.4,N,2018-12-31
+EMP-0167,Alyssa Long,Engineering,Software Engineer,2015-04-17,,121611,2,3.7,N,2018-12-31
+EMP-0171,Jamie Walton,Finance,Accounts Payable Specialist,2016-09-02,,104544,4,2.3,Y,2018-12-31
+EMP-0172,Darlene Miller,Sales,Sales Engineer,2017-06-01,,78675,4,1.6,N,2018-12-31
+EMP-0175,Nicole Herring,Operations,Operations Analyst,2017-11-19,,120304,1,1.1,Y,2018-12-31
+EMP-0176,Alex Hernandez,Sales,Account Executive,2017-12-13,,74249,5,1.0,Y,2018-12-31
+EMP-0180,Robert Oconnell,Human Resources,Compensation Analyst,2018-08-04,2019-01-31,88006,3,0.4,Y,2018-12-31
+EMP-0181,Alexander Collins,Sales,Business Development Rep,2018-08-11,,130137,4,0.4,N,2018-12-31
+EMP-0184,Ashley Barton,Engineering,Senior Software Engineer,2015-06-23,,140561,3,3.5,Y,2018-12-31
+EMP-0185,Lindsay Martinez,Engineering,Engineering Manager,2016-01-04,,180408,4,3.0,N,2018-12-31
+EMP-0188,Samantha Garcia,Engineering,DevOps Engineer,2018-09-06,,103181,3,0.3,N,2018-12-31
+EMP-0189,Madison Poole,IT,Systems Administrator,2018-08-19,,111940,3,0.4,N,2018-12-31
+EMP-0191,Debra Morton,Engineering,Senior Software Engineer,2017-11-23,,130273,3,1.1,N,2018-12-31
+EMP-0192,Karen Graham,Legal,Paralegal,2017-09-13,,106164,4,1.3,N,2018-12-31
+EMP-0193,Debra Christian,Engineering,Site Reliability Engineer,2017-08-10,2019-09-29,110242,4,1.4,N,2018-12-31
+EMP-0198,Spencer Haynes,Engineering,Staff Engineer,2015-10-12,,201004,5,3.2,N,2018-12-31
+EMP-0001,Allison Hill,Sales,Sales Representative,2018-09-25,,115579,5,1.3,Y,2019-12-31
+EMP-0003,Angie Henderson,Finance,Controller,2019-11-16,,112982,5,0.1,N,2019-12-31
+EMP-0007,Abigail Shaffer,Engineering,Software Engineer,2018-05-07,,117601,4,1.7,Y,2019-12-31
+EMP-0011,Monica Herrera,IT,Help Desk Analyst,2019-03-12,,92291,4,0.8,Y,2019-12-31
+EMP-0013,Lisa Hensley,Human Resources,HR Manager,2015-02-21,,138668,3,4.9,N,2019-12-31
+EMP-0015,Dylan Miller,Operations,Facilities Manager,2015-06-07,,139360,3,4.6,N,2019-12-31
+EMP-0016,Brian Ramirez,Operations,Operations Manager,2017-12-11,,148818,2,2.1,N,2019-12-31
+EMP-0020,Carla Gray,Engineering,DevOps Engineer,2018-06-14,2022-05-24,111407,3,1.5,N,2019-12-31
+EMP-0023,Ethan Adams,Engineering,Software Engineer,2019-04-26,,70557,4,0.7,N,2019-12-31
+EMP-0024,Tommy Walter,Human Resources,HR Generalist,2018-03-21,,124143,4,1.8,Y,2019-12-31
+EMP-0025,Matthew Foster,Legal,Contract Manager,2018-02-15,2020-12-31,157324,4,1.9,N,2019-12-31
+EMP-0026,Judy Baker,Operations,Process Improvement Specialist,2018-11-09,,101137,5,1.1,N,2019-12-31
+EMP-0030,Anthony Rodriguez,Legal,Contract Manager,2017-08-05,,122103,3,2.4,N,2019-12-31
+EMP-0031,Rebecca Henderson,Engineering,DevOps Engineer,2019-07-11,,88464,4,0.5,N,2019-12-31
+EMP-0034,Nathan Maldonado,Engineering,QA Engineer,2015-05-19,,103733,4,4.6,N,2019-12-31
+EMP-0036,Jeffrey Chavez,Sales,VP Sales,2017-07-06,,194088,4,2.5,Y,2019-12-31
+EMP-0039,Elizabeth Fowler,Engineering,Engineering Manager,2018-12-14,,176913,3,1.0,N,2019-12-31
+EMP-0041,Paula Moreno,Operations,Logistics Coordinator,2019-04-04,,76247,4,0.7,N,2019-12-31
+EMP-0042,Fred Smith,Sales,Sales Representative,2019-02-27,,91315,4,0.8,Y,2019-12-31
+EMP-0043,Sherry Decker,Engineering,Staff Engineer,2015-01-18,,247352,3,5.0,Y,2019-12-31
+EMP-0045,Angelica Tucker,Operations,Process Improvement Specialist,2018-02-18,,108357,4,1.9,N,2019-12-31
+EMP-0047,John Pierce,Human Resources,HR Business Partner,2017-01-14,,102404,4,3.0,N,2019-12-31
+EMP-0048,Shane Henderson,Finance,Controller,2019-11-19,,93313,3,0.1,N,2019-12-31
+EMP-0049,Joshua Blair,Sales,Sales Engineer,2017-05-20,,137448,4,2.6,N,2019-12-31
+EMP-0050,Eric Carney,Finance,Financial Analyst,2019-09-18,,105562,3,0.3,Y,2019-12-31
+EMP-0051,Jessica Holmes,Finance,Financial Analyst,2015-11-27,,132013,3,4.1,N,2019-12-31
+EMP-0056,Michael Lewis,Engineering,Staff Engineer,2018-08-18,2020-02-09,164163,3,1.4,N,2019-12-31
+EMP-0059,Brent Jordan,Engineering,Site Reliability Engineer,2016-08-04,,73041,4,3.4,Y,2019-12-31
+EMP-0060,John Daniel,Marketing,Brand Manager,2016-06-28,,174152,5,3.5,N,2019-12-31
+EMP-0062,Gerald Hensley,Engineering,Engineering Manager,2019-06-12,,180794,3,0.6,N,2019-12-31
+EMP-0064,Donald Wright,Operations,Operations Manager,2019-11-14,,150051,4,0.1,N,2019-12-31
+EMP-0065,Jessica Callahan,IT,Network Engineer,2019-01-27,,67856,4,0.9,N,2019-12-31
+EMP-0066,Amber Kidd,Sales,VP Sales,2019-11-25,,239663,3,0.1,N,2019-12-31
+EMP-0067,Tracy House,Human Resources,Recruiter,2019-06-24,,75800,3,0.5,N,2019-12-31
+EMP-0068,Carol Tucker,Engineering,Senior Software Engineer,2019-12-28,,171423,3,0.0,N,2019-12-31
+EMP-0071,Jordan Henderson,IT,Network Engineer,2016-04-18,2019-03-04,116791,4,3.7,N,2019-12-31
+EMP-0072,Whitney Peters,Operations,Operations Manager,2015-12-12,,154715,5,4.1,N,2019-12-31
+EMP-0074,Lauren Daniels,Marketing,Content Strategist,2018-10-07,,91442,4,1.2,N,2019-12-31
+EMP-0076,Sarah Moore,Engineering,Senior Software Engineer,2015-03-24,,128480,2,4.8,N,2019-12-31
+EMP-0078,Megan Young,Sales,VP Sales,2017-02-05,,234482,3,2.9,N,2019-12-31
+EMP-0079,Steve Sanchez,Sales,Sales Engineer,2016-11-21,,124138,4,3.1,N,2019-12-31
+EMP-0080,Lisa Barnes,Legal,Compliance Officer,2016-06-14,,100985,3,3.5,N,2019-12-31
+EMP-0082,Mike Allen,Human Resources,Compensation Analyst,2016-10-17,,89129,2,3.2,N,2019-12-31
+EMP-0086,Daniel Baker,Engineering,Senior Software Engineer,2018-09-04,,151930,4,1.3,N,2019-12-31
+EMP-0087,Shirley Suarez,Engineering,DevOps Engineer,2018-03-25,,81471,3,1.8,Y,2019-12-31
+EMP-0092,Brian Rodriguez,Marketing,Digital Marketing Specialist,2017-10-05,,79504,2,2.2,N,2019-12-31
+EMP-0094,Christina Walters,Finance,Financial Analyst,2019-02-21,,107756,3,0.9,Y,2019-12-31
+EMP-0096,Anna Henderson,Sales,Business Development Rep,2017-06-12,,102424,4,2.6,N,2019-12-31
+EMP-0098,Deborah Figueroa,Operations,Logistics Coordinator,2019-09-13,,119780,4,0.3,Y,2019-12-31
+EMP-0099,Jessica Smith,Finance,Controller,2015-06-10,,105291,4,4.6,N,2019-12-31
+EMP-0100,Stephen Mckee,Sales,VP Sales,2016-09-25,,232693,2,3.3,N,2019-12-31
+EMP-0101,Sandra Aguilar,Operations,Facilities Manager,2017-12-15,2020-05-03,149184,2,2.0,N,2019-12-31
+EMP-0103,Rebecca Valencia,Engineering,Senior Software Engineer,2015-11-16,,194089,3,4.1,N,2019-12-31
+EMP-0107,Sharon Cherry,IT,Database Administrator,2015-04-14,,106644,3,4.7,N,2019-12-31
+EMP-0111,Richard Rodriguez,Operations,Logistics Coordinator,2015-04-02,,109476,3,4.7,N,2019-12-31
+EMP-0112,Shannon Walker,Human Resources,HR Manager,2015-11-11,,180158,3,4.1,N,2019-12-31
+EMP-0117,William Herrera,IT,IT Manager,2019-04-04,2020-08-26,181496,4,0.7,N,2019-12-31
+EMP-0118,Ashley Waller,IT,Help Desk Analyst,2019-12-16,,121004,3,0.0,N,2019-12-31
+EMP-0119,Victor Baker,Human Resources,HR Manager,2016-09-18,,146729,4,3.3,N,2019-12-31
+EMP-0120,Jeffrey Chandler,Engineering,Site Reliability Engineer,2015-06-18,,137715,5,4.5,N,2019-12-31
+EMP-0122,Kenneth Scott,Sales,Sales Representative,2015-02-17,,93420,3,4.9,N,2019-12-31
+EMP-0124,Michelle Harmon,Marketing,Growth Engineer,2019-11-07,,106031,3,0.1,Y,2019-12-31
+EMP-0127,Michelle Evans,Marketing,Brand Manager,2018-03-04,2020-08-20,172863,4,1.8,N,2019-12-31
+EMP-0131,Elizabeth Kelley,Marketing,Content Strategist,2019-10-22,,129288,3,0.2,N,2019-12-31
+EMP-0134,Daniel Kennedy,Human Resources,Compensation Analyst,2015-06-11,,123403,3,4.6,N,2019-12-31
+EMP-0136,Jose Schultz,Operations,Process Improvement Specialist,2017-07-23,,124055,1,2.4,Y,2019-12-31
+EMP-0137,Robert Potter,Engineering,DevOps Engineer,2017-08-18,,114955,3,2.4,N,2019-12-31
+EMP-0138,Courtney Gonzalez,Operations,Facilities Manager,2019-05-23,,175427,4,0.6,N,2019-12-31
+EMP-0141,Cheyenne Horton,Sales,Account Executive,2016-07-11,,120782,5,3.5,N,2019-12-31
+EMP-0145,Amber Wright,Marketing,Growth Engineer,2018-03-20,,126730,2,1.8,N,2019-12-31
+EMP-0147,Victoria Larson,IT,Security Analyst,2016-08-10,,113388,4,3.4,N,2019-12-31
+EMP-0149,Kathy Rivas,Marketing,Brand Manager,2016-10-04,2020-02-16,150699,3,3.2,N,2019-12-31
+EMP-0150,Stephanie Manning,Engineering,Site Reliability Engineer,2016-11-07,,84762,4,3.1,N,2019-12-31
+EMP-0153,Denise Jones,Engineering,QA Engineer,2017-11-24,,94565,4,2.1,N,2019-12-31
+EMP-0157,Joshua Perry,Engineering,DevOps Engineer,2019-04-27,,105716,3,0.7,N,2019-12-31
+EMP-0158,Jason Stein,Marketing,Digital Marketing Specialist,2019-01-18,,128518,5,1.0,N,2019-12-31
+EMP-0161,Paul Castaneda,Marketing,Brand Manager,2015-02-07,,150310,1,4.9,N,2019-12-31
+EMP-0163,Lindsey Walker,Engineering,Site Reliability Engineer,2019-05-12,,97372,4,0.6,N,2019-12-31
+EMP-0164,Jeffrey Johnson,Operations,Process Improvement Specialist,2018-12-05,2022-04-18,108258,4,1.1,Y,2019-12-31
+EMP-0165,Michael Powell,Marketing,Digital Marketing Specialist,2018-08-18,,93899,2,1.4,N,2019-12-31
+EMP-0167,Alyssa Long,Engineering,Software Engineer,2015-04-17,,123698,3,4.7,N,2019-12-31
+EMP-0171,Jamie Walton,Finance,Accounts Payable Specialist,2016-09-02,,104162,4,3.3,N,2019-12-31
+EMP-0172,Darlene Miller,Sales,Sales Engineer,2017-06-01,,81484,4,2.6,N,2019-12-31
+EMP-0175,Nicole Herring,Operations,Operations Analyst,2017-11-19,,121539,4,2.1,Y,2019-12-31
+EMP-0176,Alex Hernandez,Sales,Account Executive,2017-12-13,,77681,4,2.0,N,2019-12-31
+EMP-0178,Michael Wang,Legal,Contract Manager,2019-07-13,,143587,4,0.5,Y,2019-12-31
+EMP-0179,Lawrence Adkins,IT,IT Manager,2019-05-16,2020-09-07,148672,3,0.6,N,2019-12-31
+EMP-0180,Robert Oconnell,Human Resources,Compensation Analyst,2018-08-04,2019-01-31,91349,5,1.4,N,2019-12-31
+EMP-0181,Alexander Collins,Sales,Business Development Rep,2018-08-11,,132440,4,1.4,N,2019-12-31
+EMP-0184,Ashley Barton,Engineering,Senior Software Engineer,2015-06-23,,134868,3,4.5,N,2019-12-31
+EMP-0185,Lindsay Martinez,Engineering,Engineering Manager,2016-01-04,,186842,2,4.0,N,2019-12-31
+EMP-0186,Dr. Hannah Patterson,Finance,Accountant,2019-07-03,2020-09-25,87541,4,0.5,Y,2019-12-31
+EMP-0188,Samantha Garcia,Engineering,DevOps Engineer,2018-09-06,,106685,2,1.3,N,2019-12-31
+EMP-0189,Madison Poole,IT,Systems Administrator,2018-08-19,,114273,3,1.4,N,2019-12-31
+EMP-0191,Debra Morton,Engineering,Senior Software Engineer,2017-11-23,,133218,3,2.1,N,2019-12-31
+EMP-0192,Karen Graham,Legal,Paralegal,2017-09-13,,112586,3,2.3,N,2019-12-31
+EMP-0193,Debra Christian,Engineering,Site Reliability Engineer,2017-08-10,2019-09-29,117531,3,2.4,N,2019-12-31
+EMP-0195,John Bishop,Sales,Sales Manager,2019-01-09,,135236,4,1.0,N,2019-12-31
+EMP-0198,Spencer Haynes,Engineering,Staff Engineer,2015-10-12,,206305,3,4.2,N,2019-12-31
+EMP-0199,Adam Vaughan,Engineering,Staff Engineer,2019-11-05,,183141,4,0.2,N,2019-12-31
+EMP-0001,Allison Hill,Sales,Sales Representative,2018-09-25,,119258,4,2.3,Y,2020-12-31
+EMP-0002,Noah Rhodes,Legal,Contract Manager,2020-01-19,,141606,2,1.0,Y,2020-12-31
+EMP-0003,Angie Henderson,Finance,Controller,2019-11-16,,117197,3,1.1,N,2020-12-31
+EMP-0007,Abigail Shaffer,Engineering,Software Engineer,2018-05-07,,122330,3,2.7,N,2020-12-31
+EMP-0011,Monica Herrera,IT,Help Desk Analyst,2019-03-12,,96927,4,1.8,N,2020-12-31
+EMP-0013,Lisa Hensley,Human Resources,HR Manager,2015-02-21,,133366,5,5.9,N,2020-12-31
+EMP-0015,Dylan Miller,Operations,Facilities Manager,2015-06-07,,138686,3,5.6,Y,2020-12-31
+EMP-0016,Brian Ramirez,Operations,Operations Manager,2017-12-11,,155035,3,3.1,Y,2020-12-31
+EMP-0017,Holly Wood,Engineering,Engineering Manager,2020-05-27,,140973,3,0.6,N,2020-12-31
+EMP-0019,Lisa Jackson,Engineering,Senior Software Engineer,2020-12-26,,160542,4,0.0,N,2020-12-31
+EMP-0020,Carla Gray,Engineering,DevOps Engineer,2018-06-14,2022-05-24,116447,3,2.5,N,2020-12-31
+EMP-0022,Patty Perez,Engineering,Engineering Manager,2020-08-15,,178739,4,0.4,N,2020-12-31
+EMP-0023,Ethan Adams,Engineering,Software Engineer,2019-04-26,,73422,4,1.7,N,2020-12-31
+EMP-0024,Tommy Walter,Human Resources,HR Generalist,2018-03-21,,122918,3,2.8,N,2020-12-31
+EMP-0025,Matthew Foster,Legal,Contract Manager,2018-02-15,2020-12-31,162497,3,2.9,N,2020-12-31
+EMP-0026,Judy Baker,Operations,Process Improvement Specialist,2018-11-09,,104134,2,2.1,N,2020-12-31
+EMP-0030,Anthony Rodriguez,Legal,Contract Manager,2017-08-05,,122654,3,3.4,N,2020-12-31
+EMP-0031,Rebecca Henderson,Engineering,DevOps Engineer,2019-07-11,,92300,2,1.5,N,2020-12-31
+EMP-0032,James Ferrell,Human Resources,HR Generalist,2020-04-21,2024-03-01,116840,4,0.7,N,2020-12-31
+EMP-0034,Nathan Maldonado,Engineering,QA Engineer,2015-05-19,,117216,3,5.6,N,2020-12-31
+EMP-0036,Jeffrey Chavez,Sales,VP Sales,2017-07-06,,198448,3,3.5,N,2020-12-31
+EMP-0039,Elizabeth Fowler,Engineering,Engineering Manager,2018-12-14,,180222,4,2.0,N,2020-12-31
+EMP-0041,Paula Moreno,Operations,Logistics Coordinator,2019-04-04,,77575,5,1.7,Y,2020-12-31
+EMP-0042,Fred Smith,Sales,Sales Representative,2019-02-27,,97770,4,1.8,N,2020-12-31
+EMP-0043,Sherry Decker,Engineering,Staff Engineer,2015-01-18,,258967,4,6.0,N,2020-12-31
+EMP-0044,Anthony Humphrey,IT,IT Manager,2020-03-02,,127419,4,0.8,N,2020-12-31
+EMP-0045,Angelica Tucker,Operations,Process Improvement Specialist,2018-02-18,,113985,5,2.9,Y,2020-12-31
+EMP-0047,John Pierce,Human Resources,HR Business Partner,2017-01-14,,114792,5,4.0,N,2020-12-31
+EMP-0048,Shane Henderson,Finance,Controller,2019-11-19,,96007,3,1.1,N,2020-12-31
+EMP-0049,Joshua Blair,Sales,Sales Engineer,2017-05-20,,134416,3,3.6,N,2020-12-31
+EMP-0050,Eric Carney,Finance,Financial Analyst,2019-09-18,,107343,3,1.3,N,2020-12-31
+EMP-0051,Jessica Holmes,Finance,Financial Analyst,2015-11-27,,125873,5,5.1,N,2020-12-31
+EMP-0052,Danny Morgan,Marketing,Marketing Analyst,2020-07-11,,123141,2,0.5,N,2020-12-31
+EMP-0053,Crystal Robinson,Finance,Accounts Payable Specialist,2020-05-11,2022-11-27,120620,5,0.6,N,2020-12-31
+EMP-0056,Michael Lewis,Engineering,Staff Engineer,2018-08-18,2020-02-09,170931,3,2.4,N,2020-12-31
+EMP-0059,Brent Jordan,Engineering,Site Reliability Engineer,2016-08-04,,78541,3,4.4,N,2020-12-31
+EMP-0060,John Daniel,Marketing,Brand Manager,2016-06-28,,175540,2,4.5,N,2020-12-31
+EMP-0062,Gerald Hensley,Engineering,Engineering Manager,2019-06-12,,185978,4,1.6,N,2020-12-31
+EMP-0064,Donald Wright,Operations,Operations Manager,2019-11-14,,152892,4,1.1,N,2020-12-31
+EMP-0065,Jessica Callahan,IT,Network Engineer,2019-01-27,,73827,4,1.9,Y,2020-12-31
+EMP-0066,Amber Kidd,Sales,VP Sales,2019-11-25,,244045,4,1.1,Y,2020-12-31
+EMP-0067,Tracy House,Human Resources,Recruiter,2019-06-24,,79145,4,1.5,N,2020-12-31
+EMP-0068,Carol Tucker,Engineering,Senior Software Engineer,2019-12-28,,173950,2,1.0,Y,2020-12-31
+EMP-0072,Whitney Peters,Operations,Operations Manager,2015-12-12,,152500,4,5.1,N,2020-12-31
+EMP-0074,Lauren Daniels,Marketing,Content Strategist,2018-10-07,,93937,5,2.2,Y,2020-12-31
+EMP-0076,Sarah Moore,Engineering,Senior Software Engineer,2015-03-24,,140906,5,5.8,N,2020-12-31
+EMP-0078,Megan Young,Sales,VP Sales,2017-02-05,,238233,3,3.9,N,2020-12-31
+EMP-0079,Steve Sanchez,Sales,Sales Engineer,2016-11-21,,127136,3,4.1,N,2020-12-31
+EMP-0080,Lisa Barnes,Legal,Compliance Officer,2016-06-14,,109284,3,4.5,N,2020-12-31
+EMP-0081,Kelly Donovan,Marketing,Brand Manager,2020-03-18,2023-07-31,156399,4,0.8,N,2020-12-31
+EMP-0082,Mike Allen,Human Resources,Compensation Analyst,2016-10-17,,89141,3,4.2,N,2020-12-31
+EMP-0085,Zachary Ferrell,IT,Help Desk Analyst,2020-10-20,2021-07-17,76000,4,0.2,N,2020-12-31
+EMP-0086,Daniel Baker,Engineering,Senior Software Engineer,2018-09-04,,152155,3,2.3,N,2020-12-31
+EMP-0087,Shirley Suarez,Engineering,DevOps Engineer,2018-03-25,,80789,4,2.8,N,2020-12-31
+EMP-0088,Christopher Bass,IT,Systems Administrator,2020-02-13,,97124,3,0.9,N,2020-12-31
+EMP-0092,Brian Rodriguez,Marketing,Digital Marketing Specialist,2017-10-05,,76966,3,3.2,N,2020-12-31
+EMP-0094,Christina Walters,Finance,Financial Analyst,2019-02-21,,110597,3,1.9,N,2020-12-31
+EMP-0096,Anna Henderson,Sales,Business Development Rep,2017-06-12,,105915,3,3.6,N,2020-12-31
+EMP-0098,Deborah Figueroa,Operations,Logistics Coordinator,2019-09-13,,123180,4,1.3,Y,2020-12-31
+EMP-0099,Jessica Smith,Finance,Controller,2015-06-10,,106773,4,5.6,N,2020-12-31
+EMP-0100,Stephen Mckee,Sales,VP Sales,2016-09-25,,229224,3,4.3,N,2020-12-31
+EMP-0101,Sandra Aguilar,Operations,Facilities Manager,2017-12-15,2020-05-03,147916,4,3.0,N,2020-12-31
+EMP-0103,Rebecca Valencia,Engineering,Senior Software Engineer,2015-11-16,,191223,3,5.1,N,2020-12-31
+EMP-0107,Sharon Cherry,IT,Database Administrator,2015-04-14,,122705,2,5.7,N,2020-12-31
+EMP-0110,Sharon Cochran,IT,Network Engineer,2020-03-02,,122381,5,0.8,N,2020-12-31
+EMP-0111,Richard Rodriguez,Operations,Logistics Coordinator,2015-04-02,,112913,3,5.7,N,2020-12-31
+EMP-0112,Shannon Walker,Human Resources,HR Manager,2015-11-11,,179101,5,5.1,N,2020-12-31
+EMP-0115,Garrett Lin,Operations,Supply Chain Manager,2020-09-26,,114683,3,0.3,N,2020-12-31
+EMP-0116,Diana May,IT,Security Analyst,2020-07-19,2021-10-12,95464,4,0.5,N,2020-12-31
+EMP-0117,William Herrera,IT,IT Manager,2019-04-04,2020-08-26,184812,3,1.7,N,2020-12-31
+EMP-0118,Ashley Waller,IT,Help Desk Analyst,2019-12-16,,125441,5,1.0,Y,2020-12-31
+EMP-0119,Victor Baker,Human Resources,HR Manager,2016-09-18,,145619,3,4.3,N,2020-12-31
+EMP-0120,Jeffrey Chandler,Engineering,Site Reliability Engineer,2015-06-18,,132323,2,5.5,Y,2020-12-31
+EMP-0122,Kenneth Scott,Sales,Sales Representative,2015-02-17,,95301,4,5.9,N,2020-12-31
+EMP-0124,Michelle Harmon,Marketing,Growth Engineer,2019-11-07,,109685,2,1.1,N,2020-12-31
+EMP-0126,Erin Edwards,Human Resources,HR Business Partner,2020-07-05,,103982,5,0.5,N,2020-12-31
+EMP-0127,Michelle Evans,Marketing,Brand Manager,2018-03-04,2020-08-20,177294,3,2.8,N,2020-12-31
+EMP-0130,Megan Orr,Marketing,Brand Manager,2020-07-12,2021-04-08,136720,3,0.5,N,2020-12-31
+EMP-0131,Elizabeth Kelley,Marketing,Content Strategist,2019-10-22,,133639,4,1.2,Y,2020-12-31
+EMP-0133,Mary Marshall,Marketing,Digital Marketing Specialist,2020-03-13,,123717,4,0.8,N,2020-12-31
+EMP-0134,Daniel Kennedy,Human Resources,Compensation Analyst,2015-06-11,,127885,5,5.6,N,2020-12-31
+EMP-0136,Jose Schultz,Operations,Process Improvement Specialist,2017-07-23,,125021,2,3.4,N,2020-12-31
+EMP-0137,Robert Potter,Engineering,DevOps Engineer,2017-08-18,,119447,3,3.4,Y,2020-12-31
+EMP-0138,Courtney Gonzalez,Operations,Facilities Manager,2019-05-23,,180069,3,1.6,N,2020-12-31
+EMP-0141,Cheyenne Horton,Sales,Account Executive,2016-07-11,,123702,4,4.5,N,2020-12-31
+EMP-0142,David Douglas Jr.,IT,Security Analyst,2020-05-21,2021-04-16,104057,5,0.6,Y,2020-12-31
+EMP-0145,Amber Wright,Marketing,Growth Engineer,2018-03-20,,127786,5,2.8,N,2020-12-31
+EMP-0147,Victoria Larson,IT,Security Analyst,2016-08-10,,112943,4,4.4,N,2020-12-31
+EMP-0148,Stephanie Salazar,Engineering,Site Reliability Engineer,2020-07-23,,116109,4,0.4,N,2020-12-31
+EMP-0149,Kathy Rivas,Marketing,Brand Manager,2016-10-04,2020-02-16,150746,3,4.2,N,2020-12-31
+EMP-0150,Stephanie Manning,Engineering,Site Reliability Engineer,2016-11-07,,85418,4,4.1,N,2020-12-31
+EMP-0152,Pamela Boyd,Human Resources,HR Generalist,2020-12-03,,126596,3,0.1,N,2020-12-31
+EMP-0153,Denise Jones,Engineering,QA Engineer,2017-11-24,,99131,4,3.1,N,2020-12-31
+EMP-0155,Brenda Hall,Marketing,Digital Marketing Specialist,2020-03-09,,117613,3,0.8,N,2020-12-31
+EMP-0157,Joshua Perry,Engineering,DevOps Engineer,2019-04-27,,110950,2,1.7,Y,2020-12-31
+EMP-0158,Jason Stein,Marketing,Digital Marketing Specialist,2019-01-18,,130405,3,2.0,N,2020-12-31
+EMP-0161,Paul Castaneda,Marketing,Brand Manager,2015-02-07,,160128,4,5.9,N,2020-12-31
+EMP-0163,Lindsey Walker,Engineering,Site Reliability Engineer,2019-05-12,,102239,4,1.6,N,2020-12-31
+EMP-0164,Jeffrey Johnson,Operations,Process Improvement Specialist,2018-12-05,2022-04-18,111246,5,2.1,N,2020-12-31
+EMP-0165,Michael Powell,Marketing,Digital Marketing Specialist,2018-08-18,,92001,3,2.4,N,2020-12-31
+EMP-0167,Alyssa Long,Engineering,Software Engineer,2015-04-17,,122152,4,5.7,N,2020-12-31
+EMP-0171,Jamie Walton,Finance,Accounts Payable Specialist,2016-09-02,,117168,4,4.3,N,2020-12-31
+EMP-0172,Darlene Miller,Sales,Sales Engineer,2017-06-01,,85039,5,3.6,N,2020-12-31
+EMP-0174,Matthew Harrington,Legal,Contract Manager,2020-10-25,,162527,4,0.2,N,2020-12-31
+EMP-0175,Nicole Herring,Operations,Operations Analyst,2017-11-19,,130553,3,3.1,N,2020-12-31
+EMP-0176,Alex Hernandez,Sales,Account Executive,2017-12-13,,80049,4,3.0,N,2020-12-31
+EMP-0178,Michael Wang,Legal,Contract Manager,2019-07-13,,144946,4,1.5,N,2020-12-31
+EMP-0179,Lawrence Adkins,IT,IT Manager,2019-05-16,2020-09-07,151347,3,1.6,Y,2020-12-31
+EMP-0181,Alexander Collins,Sales,Business Development Rep,2018-08-11,,138359,3,2.4,N,2020-12-31
+EMP-0182,Tina Sanders,Sales,Sales Engineer,2020-02-19,,78974,4,0.9,N,2020-12-31
+EMP-0184,Ashley Barton,Engineering,Senior Software Engineer,2015-06-23,,143175,4,5.5,Y,2020-12-31
+EMP-0185,Lindsay Martinez,Engineering,Engineering Manager,2016-01-04,,180562,3,5.0,Y,2020-12-31
+EMP-0186,Dr. Hannah Patterson,Finance,Accountant,2019-07-03,2020-09-25,89598,4,1.5,N,2020-12-31
+EMP-0188,Samantha Garcia,Engineering,DevOps Engineer,2018-09-06,,107621,5,2.3,N,2020-12-31
+EMP-0189,Madison Poole,IT,Systems Administrator,2018-08-19,,119336,5,2.4,N,2020-12-31
+EMP-0190,Jessica Gross,Operations,Operations Manager,2020-04-15,2024-03-25,180982,3,0.7,N,2020-12-31
+EMP-0191,Debra Morton,Engineering,Senior Software Engineer,2017-11-23,,138084,3,3.1,Y,2020-12-31
+EMP-0192,Karen Graham,Legal,Paralegal,2017-09-13,,115401,3,3.3,N,2020-12-31
+EMP-0195,John Bishop,Sales,Sales Manager,2019-01-09,,139467,3,2.0,N,2020-12-31
+EMP-0196,Allen Rosales,Sales,VP Sales,2020-09-27,,208938,4,0.3,Y,2020-12-31
+EMP-0197,Daniel Salinas,Legal,Corporate Counsel,2020-02-15,,118618,4,0.9,N,2020-12-31
+EMP-0198,Spencer Haynes,Engineering,Staff Engineer,2015-10-12,,211660,2,5.2,N,2020-12-31
+EMP-0199,Adam Vaughan,Engineering,Staff Engineer,2019-11-05,,185294,4,1.2,N,2020-12-31
+EMP-0001,Allison Hill,Sales,Sales Representative,2018-09-25,,120715,5,3.3,N,2021-12-31
+EMP-0002,Noah Rhodes,Legal,Contract Manager,2020-01-19,,143618,4,1.9,N,2021-12-31
+EMP-0003,Angie Henderson,Finance,Controller,2019-11-16,,118889,4,2.1,Y,2021-12-31
+EMP-0004,Daniel Wagner,Legal,Corporate Counsel,2021-06-14,,111720,5,0.5,Y,2021-12-31
+EMP-0007,Abigail Shaffer,Engineering,Software Engineer,2018-05-07,,124205,4,3.7,N,2021-12-31
+EMP-0009,Gabrielle Davis,Sales,Sales Manager,2021-11-19,,144455,3,0.1,Y,2021-12-31
+EMP-0011,Monica Herrera,IT,Help Desk Analyst,2019-03-12,,95042,2,2.8,N,2021-12-31
+EMP-0013,Lisa Hensley,Human Resources,HR Manager,2015-02-21,,144768,5,6.9,Y,2021-12-31
+EMP-0014,Michele Williams,Sales,Sales Engineer,2021-09-01,2022-11-25,68088,4,0.3,N,2021-12-31
+EMP-0015,Dylan Miller,Operations,Facilities Manager,2015-06-07,,147367,3,6.6,N,2021-12-31
+EMP-0016,Brian Ramirez,Operations,Operations Manager,2017-12-11,,159362,4,4.1,Y,2021-12-31
+EMP-0017,Holly Wood,Engineering,Engineering Manager,2020-05-27,,144004,3,1.6,N,2021-12-31
+EMP-0019,Lisa Jackson,Engineering,Senior Software Engineer,2020-12-26,,165394,4,1.0,N,2021-12-31
+EMP-0020,Carla Gray,Engineering,DevOps Engineer,2018-06-14,2022-05-24,119315,3,3.5,N,2021-12-31
+EMP-0022,Patty Perez,Engineering,Engineering Manager,2020-08-15,,180508,3,1.4,Y,2021-12-31
+EMP-0023,Ethan Adams,Engineering,Software Engineer,2019-04-26,,79407,3,2.7,N,2021-12-31
+EMP-0024,Tommy Walter,Human Resources,HR Generalist,2018-03-21,,124812,2,3.8,Y,2021-12-31
+EMP-0026,Judy Baker,Operations,Process Improvement Specialist,2018-11-09,,112202,3,3.1,N,2021-12-31
+EMP-0029,Zachary Hicks,Engineering,Engineering Manager,2021-09-24,,175080,3,0.3,Y,2021-12-31
+EMP-0030,Anthony Rodriguez,Legal,Contract Manager,2017-08-05,,127273,3,4.4,N,2021-12-31
+EMP-0031,Rebecca Henderson,Engineering,DevOps Engineer,2019-07-11,,93218,2,2.5,Y,2021-12-31
+EMP-0032,James Ferrell,Human Resources,HR Generalist,2020-04-21,2024-03-01,121499,3,1.7,N,2021-12-31
+EMP-0034,Nathan Maldonado,Engineering,QA Engineer,2015-05-19,,108650,4,6.6,N,2021-12-31
+EMP-0035,Debra Davidson,IT,Network Engineer,2021-11-12,,66135,3,0.1,N,2021-12-31
+EMP-0036,Jeffrey Chavez,Sales,VP Sales,2017-07-06,,198108,3,4.5,N,2021-12-31
+EMP-0039,Elizabeth Fowler,Engineering,Engineering Manager,2018-12-14,,179837,4,3.0,Y,2021-12-31
+EMP-0040,Brittany Farmer,Operations,Process Improvement Specialist,2021-12-08,,89454,4,0.1,N,2021-12-31
+EMP-0041,Paula Moreno,Operations,Logistics Coordinator,2019-04-04,,82815,3,2.7,N,2021-12-31
+EMP-0042,Fred Smith,Sales,Sales Representative,2019-02-27,,102754,4,2.8,N,2021-12-31
+EMP-0043,Sherry Decker,Engineering,Staff Engineer,2015-01-18,,249142,3,7.0,N,2021-12-31
+EMP-0044,Anthony Humphrey,IT,IT Manager,2020-03-02,,129568,3,1.8,N,2021-12-31
+EMP-0045,Angelica Tucker,Operations,Process Improvement Specialist,2018-02-18,,120701,4,3.9,Y,2021-12-31
+EMP-0047,John Pierce,Human Resources,HR Business Partner,2017-01-14,,114518,4,5.0,N,2021-12-31
+EMP-0048,Shane Henderson,Finance,Controller,2019-11-19,,100020,2,2.1,N,2021-12-31
+EMP-0049,Joshua Blair,Sales,Sales Engineer,2017-05-20,,137557,4,4.6,N,2021-12-31
+EMP-0050,Eric Carney,Finance,Financial Analyst,2019-09-18,,113030,3,2.3,N,2021-12-31
+EMP-0051,Jessica Holmes,Finance,Financial Analyst,2015-11-27,,137115,4,6.1,N,2021-12-31
+EMP-0052,Danny Morgan,Marketing,Marketing Analyst,2020-07-11,,125068,4,1.5,N,2021-12-31
+EMP-0053,Crystal Robinson,Finance,Accounts Payable Specialist,2020-05-11,2022-11-27,126827,4,1.6,N,2021-12-31
+EMP-0058,Richard Aguirre,Legal,Legal Analyst,2021-01-11,,93039,3,1.0,N,2021-12-31
+EMP-0059,Brent Jordan,Engineering,Site Reliability Engineer,2016-08-04,,91132,3,5.4,N,2021-12-31
+EMP-0060,John Daniel,Marketing,Brand Manager,2016-06-28,,173777,3,5.5,N,2021-12-31
+EMP-0061,Victoria Garcia,Finance,Financial Analyst,2021-02-25,,98216,3,0.8,Y,2021-12-31
+EMP-0062,Gerald Hensley,Engineering,Engineering Manager,2019-06-12,,191703,4,2.6,N,2021-12-31
+EMP-0064,Donald Wright,Operations,Operations Manager,2019-11-14,,157778,4,2.1,N,2021-12-31
+EMP-0065,Jessica Callahan,IT,Network Engineer,2019-01-27,,74000,4,2.9,N,2021-12-31
+EMP-0066,Amber Kidd,Sales,VP Sales,2019-11-25,,243644,5,2.1,N,2021-12-31
+EMP-0067,Tracy House,Human Resources,Recruiter,2019-06-24,,80895,2,2.5,N,2021-12-31
+EMP-0068,Carol Tucker,Engineering,Senior Software Engineer,2019-12-28,,180142,5,2.0,N,2021-12-31
+EMP-0069,James Brown,Engineering,Site Reliability Engineer,2021-01-09,,93309,2,1.0,N,2021-12-31
+EMP-0072,Whitney Peters,Operations,Operations Manager,2015-12-12,,159204,3,6.1,Y,2021-12-31
+EMP-0074,Lauren Daniels,Marketing,Content Strategist,2018-10-07,,99352,4,3.2,Y,2021-12-31
+EMP-0076,Sarah Moore,Engineering,Senior Software Engineer,2015-03-24,,143344,5,6.8,N,2021-12-31
+EMP-0078,Megan Young,Sales,VP Sales,2017-02-05,,245665,4,4.9,N,2021-12-31
+EMP-0079,Steve Sanchez,Sales,Sales Engineer,2016-11-21,,131990,3,5.1,N,2021-12-31
+EMP-0080,Lisa Barnes,Legal,Compliance Officer,2016-06-14,,107690,5,5.5,N,2021-12-31
+EMP-0081,Kelly Donovan,Marketing,Brand Manager,2020-03-18,2023-07-31,160840,5,1.8,N,2021-12-31
+EMP-0082,Mike Allen,Human Resources,Compensation Analyst,2016-10-17,,98968,3,5.2,N,2021-12-31
+EMP-0084,Paul Jones,IT,Systems Administrator,2021-02-05,,75058,3,0.9,Y,2021-12-31
+EMP-0085,Zachary Ferrell,IT,Help Desk Analyst,2020-10-20,2021-07-17,80227,4,1.2,N,2021-12-31
+EMP-0086,Daniel Baker,Engineering,Senior Software Engineer,2018-09-04,,162646,4,3.3,Y,2021-12-31
+EMP-0087,Shirley Suarez,Engineering,DevOps Engineer,2018-03-25,,89017,3,3.8,N,2021-12-31
+EMP-0088,Christopher Bass,IT,Systems Administrator,2020-02-13,,102569,3,1.9,N,2021-12-31
+EMP-0089,Lisa Archer,Human Resources,HR Manager,2021-05-04,,135770,4,0.7,N,2021-12-31
+EMP-0090,Aimee Montoya,Operations,Operations Manager,2021-10-13,,151681,3,0.2,N,2021-12-31
+EMP-0092,Brian Rodriguez,Marketing,Digital Marketing Specialist,2017-10-05,,90594,4,4.2,N,2021-12-31
+EMP-0094,Christina Walters,Finance,Financial Analyst,2019-02-21,,116355,4,2.9,N,2021-12-31
+EMP-0096,Anna Henderson,Sales,Business Development Rep,2017-06-12,,106700,4,4.6,N,2021-12-31
+EMP-0098,Deborah Figueroa,Operations,Logistics Coordinator,2019-09-13,,129119,4,2.3,N,2021-12-31
+EMP-0099,Jessica Smith,Finance,Controller,2015-06-10,,101105,3,6.6,N,2021-12-31
+EMP-0100,Stephen Mckee,Sales,VP Sales,2016-09-25,,243294,2,5.3,Y,2021-12-31
+EMP-0103,Rebecca Valencia,Engineering,Senior Software Engineer,2015-11-16,,202407,5,6.1,N,2021-12-31
+EMP-0107,Sharon Cherry,IT,Database Administrator,2015-04-14,,126797,2,6.7,N,2021-12-31
+EMP-0108,Sierra Johnson,Human Resources,HR Business Partner,2021-01-20,,94770,3,0.9,Y,2021-12-31
+EMP-0110,Sharon Cochran,IT,Network Engineer,2020-03-02,,127168,3,1.8,Y,2021-12-31
+EMP-0111,Richard Rodriguez,Operations,Logistics Coordinator,2015-04-02,,121978,3,6.7,N,2021-12-31
+EMP-0112,Shannon Walker,Human Resources,HR Manager,2015-11-11,,193574,3,6.1,N,2021-12-31
+EMP-0115,Garrett Lin,Operations,Supply Chain Manager,2020-09-26,,119090,3,1.3,N,2021-12-31
+EMP-0116,Diana May,IT,Security Analyst,2020-07-19,2021-10-12,97790,4,1.5,N,2021-12-31
+EMP-0118,Ashley Waller,IT,Help Desk Analyst,2019-12-16,,125616,3,2.0,N,2021-12-31
+EMP-0119,Victor Baker,Human Resources,HR Manager,2016-09-18,,149656,3,5.3,Y,2021-12-31
+EMP-0120,Jeffrey Chandler,Engineering,Site Reliability Engineer,2015-06-18,,134823,4,6.5,N,2021-12-31
+EMP-0121,Larry Dixon,Marketing,Digital Marketing Specialist,2021-10-03,2023-11-22,70903,3,0.2,N,2021-12-31
+EMP-0122,Kenneth Scott,Sales,Sales Representative,2015-02-17,,98062,3,6.9,N,2021-12-31
+EMP-0124,Michelle Harmon,Marketing,Growth Engineer,2019-11-07,,112447,3,2.1,N,2021-12-31
+EMP-0125,Helen Jones,Operations,Supply Chain Manager,2021-05-15,2022-02-09,170538,2,0.6,N,2021-12-31
+EMP-0126,Erin Edwards,Human Resources,HR Business Partner,2020-07-05,,108779,3,1.5,N,2021-12-31
+EMP-0130,Megan Orr,Marketing,Brand Manager,2020-07-12,2021-04-08,142277,4,1.5,N,2021-12-31
+EMP-0131,Elizabeth Kelley,Marketing,Content Strategist,2019-10-22,,137063,4,2.2,N,2021-12-31
+EMP-0133,Mary Marshall,Marketing,Digital Marketing Specialist,2020-03-13,,125844,2,1.8,N,2021-12-31
+EMP-0134,Daniel Kennedy,Human Resources,Compensation Analyst,2015-06-11,,119154,4,6.6,N,2021-12-31
+EMP-0135,Rebecca Jackson,Legal,Corporate Counsel,2021-03-27,,105400,2,0.8,Y,2021-12-31
+EMP-0136,Jose Schultz,Operations,Process Improvement Specialist,2017-07-23,,129456,3,4.4,N,2021-12-31
+EMP-0137,Robert Potter,Engineering,DevOps Engineer,2017-08-18,,127029,3,4.4,N,2021-12-31
+EMP-0138,Courtney Gonzalez,Operations,Facilities Manager,2019-05-23,,182383,3,2.6,N,2021-12-31
+EMP-0139,David Alvarez,IT,Help Desk Analyst,2021-07-27,,85915,4,0.4,N,2021-12-31
+EMP-0141,Cheyenne Horton,Sales,Account Executive,2016-07-11,,134948,4,5.5,Y,2021-12-31
+EMP-0142,David Douglas Jr.,IT,Security Analyst,2020-05-21,2021-04-16,110643,4,1.6,N,2021-12-31
+EMP-0145,Amber Wright,Marketing,Growth Engineer,2018-03-20,,132315,4,3.8,N,2021-12-31
+EMP-0147,Victoria Larson,IT,Security Analyst,2016-08-10,,116353,5,5.4,N,2021-12-31
+EMP-0148,Stephanie Salazar,Engineering,Site Reliability Engineer,2020-07-23,,121161,2,1.4,N,2021-12-31
+EMP-0150,Stephanie Manning,Engineering,Site Reliability Engineer,2016-11-07,,85015,5,5.1,N,2021-12-31
+EMP-0151,David Wright,IT,Security Analyst,2021-08-19,2024-07-04,119631,3,0.4,Y,2021-12-31
+EMP-0152,Pamela Boyd,Human Resources,HR Generalist,2020-12-03,,129882,4,1.1,N,2021-12-31
+EMP-0153,Denise Jones,Engineering,QA Engineer,2017-11-24,,106137,4,4.1,N,2021-12-31
+EMP-0155,Brenda Hall,Marketing,Digital Marketing Specialist,2020-03-09,,121552,5,1.8,Y,2021-12-31
+EMP-0157,Joshua Perry,Engineering,DevOps Engineer,2019-04-27,,113681,3,2.7,Y,2021-12-31
+EMP-0158,Jason Stein,Marketing,Digital Marketing Specialist,2019-01-18,,136472,1,3.0,N,2021-12-31
+EMP-0159,Melissa Gates,Operations,Process Improvement Specialist,2021-03-10,,99927,4,0.8,N,2021-12-31
+EMP-0160,Jamie Smith,Legal,Compliance Officer,2021-09-17,2023-06-09,78933,2,0.3,N,2021-12-31
+EMP-0161,Paul Castaneda,Marketing,Brand Manager,2015-02-07,,154147,3,6.9,N,2021-12-31
+EMP-0163,Lindsey Walker,Engineering,Site Reliability Engineer,2019-05-12,,101502,3,2.6,N,2021-12-31
+EMP-0164,Jeffrey Johnson,Operations,Process Improvement Specialist,2018-12-05,2022-04-18,117198,3,3.1,N,2021-12-31
+EMP-0165,Michael Powell,Marketing,Digital Marketing Specialist,2018-08-18,,99652,3,3.4,Y,2021-12-31
+EMP-0167,Alyssa Long,Engineering,Software Engineer,2015-04-17,,133991,5,6.7,N,2021-12-31
+EMP-0168,Alyssa Day,Engineering,Principal Engineer,2021-01-01,,224746,2,1.0,N,2021-12-31
+EMP-0170,Daniel Murphy,IT,Systems Administrator,2021-07-13,,107903,4,0.5,N,2021-12-31
+EMP-0171,Jamie Walton,Finance,Accounts Payable Specialist,2016-09-02,,118203,4,5.3,N,2021-12-31
+EMP-0172,Darlene Miller,Sales,Sales Engineer,2017-06-01,,87066,4,4.6,N,2021-12-31
+EMP-0173,Joshua Cooke,Finance,Financial Analyst,2021-12-05,,97990,3,0.1,N,2021-12-31
+EMP-0174,Matthew Harrington,Legal,Contract Manager,2020-10-25,,166381,4,1.2,N,2021-12-31
+EMP-0175,Nicole Herring,Operations,Operations Analyst,2017-11-19,,128858,4,4.1,N,2021-12-31
+EMP-0176,Alex Hernandez,Sales,Account Executive,2017-12-13,,83938,3,4.0,Y,2021-12-31
+EMP-0177,Michael Elliott,IT,IT Manager,2021-08-18,,124364,3,0.4,Y,2021-12-31
+EMP-0178,Michael Wang,Legal,Contract Manager,2019-07-13,,150004,4,2.5,N,2021-12-31
+EMP-0181,Alexander Collins,Sales,Business Development Rep,2018-08-11,,141345,4,3.4,Y,2021-12-31
+EMP-0182,Tina Sanders,Sales,Sales Engineer,2020-02-19,,82080,3,1.9,N,2021-12-31
+EMP-0183,Angela Vaughn,Engineering,Engineering Manager,2021-11-16,2023-12-06,143672,5,0.1,N,2021-12-31
+EMP-0184,Ashley Barton,Engineering,Senior Software Engineer,2015-06-23,,150921,3,6.5,Y,2021-12-31
+EMP-0185,Lindsay Martinez,Engineering,Engineering Manager,2016-01-04,,192163,2,6.0,Y,2021-12-31
+EMP-0188,Samantha Garcia,Engineering,DevOps Engineer,2018-09-06,,108412,3,3.3,N,2021-12-31
+EMP-0189,Madison Poole,IT,Systems Administrator,2018-08-19,,120927,4,3.4,N,2021-12-31
+EMP-0190,Jessica Gross,Operations,Operations Manager,2020-04-15,2024-03-25,187547,4,1.7,Y,2021-12-31
+EMP-0191,Debra Morton,Engineering,Senior Software Engineer,2017-11-23,,139831,4,4.1,N,2021-12-31
+EMP-0192,Karen Graham,Legal,Paralegal,2017-09-13,,119339,3,4.3,N,2021-12-31
+EMP-0194,Angelica Keith,Sales,Business Development Rep,2021-09-17,,110538,2,0.3,Y,2021-12-31
+EMP-0195,John Bishop,Sales,Sales Manager,2019-01-09,,141350,3,3.0,N,2021-12-31
+EMP-0196,Allen Rosales,Sales,VP Sales,2020-09-27,,211177,3,1.3,Y,2021-12-31
+EMP-0197,Daniel Salinas,Legal,Corporate Counsel,2020-02-15,,123357,3,1.9,N,2021-12-31
+EMP-0198,Spencer Haynes,Engineering,Staff Engineer,2015-10-12,,214808,3,6.2,N,2021-12-31
+EMP-0199,Adam Vaughan,Engineering,Staff Engineer,2019-11-05,,187383,5,2.2,N,2021-12-31
+EMP-0200,Nathan Freeman,Operations,Operations Manager,2021-07-15,2022-06-10,178836,2,0.5,N,2021-12-31

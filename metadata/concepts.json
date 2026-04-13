@@ -1,0 +1,182 @@
+[
+  {
+    "id": "c_user_identity",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "User Identity",
+      "description": "A unique identifier representing a person within an enterprise system. May take different forms across systems: numeric IDs, email addresses, employee codes, or worker IDs. The same physical person may have different identifiers in different systems.",
+      "domain": "Cross-cutting"
+    }
+  },
+  {
+    "id": "c_timestamp",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Event Timestamp",
+      "description": "The date and time when an event occurred. Different systems use different timestamp formats: MM/DD/YYYY, YYYY-MM-DD, ISO 8601, or Unix epochs. All represent the same concept of when something happened.",
+      "domain": "Cross-cutting"
+    }
+  },
+  {
+    "id": "c_department",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Organizational Unit",
+      "description": "The department, business unit, or organizational group that a person belongs to. Different systems may use different labels (department, business_unit, org_unit) and slightly different naming conventions for the same groups.",
+      "domain": "Cross-cutting"
+    }
+  },
+  {
+    "id": "c_computer",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Workstation / Computer",
+      "description": "A physical or virtual computer, workstation, or endpoint used by an employee. Identified by a machine name or asset tag. The same computer may appear across authentication, browsing, and email logs.",
+      "domain": "Security"
+    }
+  },
+  {
+    "id": "c_auth_event",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Authentication Event",
+      "description": "A logon or logoff event where a user establishes or terminates a session on a computer or system. Indicates who accessed what system and when.",
+      "domain": "Security"
+    }
+  },
+  {
+    "id": "c_web_activity",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Web Browsing Activity",
+      "description": "A record of a user accessing a website or web resource. Includes the URL visited, content type, and data transferred. Reveals internet usage patterns and potential policy violations.",
+      "domain": "Security"
+    }
+  },
+  {
+    "id": "c_email_comm",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Email Communication",
+      "description": "An email message sent by a user including metadata about recipients, size, and attachments. Reveals communication patterns, external contacts, and potential data exfiltration indicators.",
+      "domain": "Security"
+    }
+  },
+  {
+    "id": "c_call_duration",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Call / Meeting Duration",
+      "description": "The length of time a video call, audio call, or virtual meeting lasted. Different platforms use different field names (duration_minutes, length_minutes) but represent the same measurement.",
+      "domain": "Communications"
+    }
+  },
+  {
+    "id": "c_meeting_size",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Meeting Participant Count",
+      "description": "The number of people who participated in a call or meeting. Some systems store this as a count (participant_count), others as an array of attendees whose length gives the count.",
+      "domain": "Communications"
+    }
+  },
+  {
+    "id": "c_meeting_organizer",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Meeting Organizer / Host",
+      "description": "The person who created or initiated a video call or meeting. Called 'organizer' in Teams and 'host' in Zoom, but represents the same role.",
+      "domain": "Communications"
+    }
+  },
+  {
+    "id": "c_call_type",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Call / Meeting Type",
+      "description": "The classification of a call or meeting. Teams uses audio/video/screen_share to describe the media type. Zoom uses instant/scheduled/recurring to describe how it was organized. Related but different categorization schemes.",
+      "domain": "Communications"
+    }
+  },
+  {
+    "id": "c_employee_name",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Employee Name",
+      "description": "The full name of an employee or worker. Different systems use different field names (name, full_name) but contain the same information.",
+      "domain": "Human Resources"
+    }
+  },
+  {
+    "id": "c_job_title",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Job Title / Position",
+      "description": "The role or position title held by an employee. Different HR systems may use 'job_role' or 'position_title' but represent the same concept.",
+      "domain": "Human Resources"
+    }
+  },
+  {
+    "id": "c_compensation",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Compensation / Salary",
+      "description": "The annual base pay of an employee. May be labeled 'salary' or 'base_compensation' in different systems. Represents the same concept of how much the employee is paid.",
+      "domain": "Human Resources"
+    }
+  },
+  {
+    "id": "c_performance",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Performance Rating",
+      "description": "An assessment of an employee's job performance. The legacy system uses an integer 1-5 scale (performance_rating), while the modern system uses a continuous 0.0-5.0 scale (performance_score). Both measure the same underlying concept but with different precision.",
+      "domain": "Human Resources"
+    }
+  },
+  {
+    "id": "c_employment_period",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Employment Period",
+      "description": "The time span of an employee's tenure, defined by their hire/start date and optional termination/end date. Different systems use different field names (hire_date/termination_date vs start_date/end_date).",
+      "domain": "Human Resources"
+    }
+  },
+  {
+    "id": "c_ticket_status",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Ticket Workflow Status",
+      "description": "The current state of a project ticket in its lifecycle: Open (new), In Progress (being worked on), Done (work finished), or Closed (verified complete).",
+      "domain": "Project Management"
+    }
+  },
+  {
+    "id": "c_ticket_assignee",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Ticket Assignee",
+      "description": "The person responsible for completing work on a project ticket. Identified by email address, which can be linked to employee records in HR systems.",
+      "domain": "Project Management"
+    }
+  },
+  {
+    "id": "c_effort_estimate",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Effort Estimate",
+      "description": "The estimated work effort for a project ticket, measured in story points using the Fibonacci scale (1, 2, 3, 5, 8, 13). Higher values indicate more complex or time-consuming work.",
+      "domain": "Project Management"
+    }
+  },
+  {
+    "id": "c_data_volume",
+    "labels": ["Concept"],
+    "properties": {
+      "name": "Data Transfer Volume",
+      "description": "The amount of data transferred in an event, measured in bytes. Appears in HTTP access logs (bytes_transferred) and email records (size_bytes). Relevant for detecting data exfiltration.",
+      "domain": "Security"
+    }
+  }
+]

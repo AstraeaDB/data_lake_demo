@@ -1,0 +1,34 @@
+[
+  {
+    "id": "domain_security",
+    "labels": ["Domain"],
+    "properties": {
+      "name": "Security",
+      "description": "Data related to cybersecurity, authentication, access control, and user activity monitoring. Includes logs from identity management systems, web proxies, email gateways, and network security appliances. These sources track who accessed what, when, and from where."
+    }
+  },
+  {
+    "id": "domain_communications",
+    "labels": ["Domain"],
+    "properties": {
+      "name": "Communications",
+      "description": "Data related to business communications including video conferencing, voice calls, instant messaging, and collaboration platforms. Tracks meeting frequency, duration, participation, and organizational communication patterns over time."
+    }
+  },
+  {
+    "id": "domain_hr",
+    "labels": ["Domain"],
+    "properties": {
+      "name": "Human Resources",
+      "description": "Data related to workforce management including employee records, hiring, termination, compensation, performance evaluations, skills tracking, training, and organizational structure. Covers the full employee lifecycle from recruitment to offboarding."
+    }
+  },
+  {
+    "id": "domain_pm",
+    "labels": ["Domain"],
+    "properties": {
+      "name": "Project Management",
+      "description": "Data related to project tracking, task management, sprint planning, and software development workflows. Includes issue tickets, story points, sprint assignments, bug reports, and feature requests organized by project and team."
+    }
+  }
+]

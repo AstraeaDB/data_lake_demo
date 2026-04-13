@@ -1,0 +1,112 @@
+[
+  {
+    "id": "src_logon",
+    "labels": ["DataSource"],
+    "properties": {
+      "name": "CERT Logon Events",
+      "description": "Authentication and session activity logs from the enterprise identity management system. Records user logon and logoff events across workstations and servers, including timestamps, target computers, and session identifiers. Useful for analyzing access patterns, working hours, detecting anomalous login behavior such as after-hours access, and identifying lateral movement across systems.",
+      "format": "csv",
+      "file_path": "data/security/logon_events.csv",
+      "origin_system": "Enterprise Identity Management",
+      "active_from": "2023-01-02",
+      "active_to": "2023-03-31",
+      "delimiter": ",",
+      "has_header": true
+    }
+  },
+  {
+    "id": "src_http",
+    "labels": ["DataSource"],
+    "properties": {
+      "name": "Web Proxy HTTP Access Logs",
+      "description": "HTTP browsing activity captured by the corporate web proxy and content filtering system. Records every web request made by employees including the target URL, content type, data volume transferred, and the originating user and workstation. Useful for monitoring internet usage patterns, detecting data exfiltration to cloud storage services, identifying visits to job search sites, and tracking access to unauthorized or suspicious websites.",
+      "format": "jsonl",
+      "file_path": "data/security/http_access.jsonl",
+      "origin_system": "Web Proxy / Content Filter",
+      "active_from": "2023-01-02",
+      "active_to": "2023-03-31"
+    }
+  },
+  {
+    "id": "src_email",
+    "labels": ["DataSource"],
+    "properties": {
+      "name": "Email Gateway Activity",
+      "description": "Email send and receive records captured by the corporate email gateway and data loss prevention (DLP) system. Records metadata for every email including sender, recipients (to, cc, bcc), message size, attachment presence and count, and timestamp. Does not contain email body content. Useful for analyzing communication patterns, detecting unusual email volume or large attachments sent to external addresses, and identifying potential data exfiltration via email.",
+      "format": "parquet",
+      "file_path": "data/security/email_activity.parquet",
+      "origin_system": "Email Gateway / DLP",
+      "active_from": "2023-01-02",
+      "active_to": "2023-03-31"
+    }
+  },
+  {
+    "id": "src_teams",
+    "labels": ["DataSource"],
+    "properties": {
+      "name": "Microsoft Teams Call Logs",
+      "description": "Call and meeting records from the Microsoft Teams unified communications platform. Covers audio calls, video calls, and screen sharing sessions. Records the organizer, duration, number of participants, call type, and the organizer's department. This was the company's primary video conferencing platform from 2018 until the migration to Zoom began in early 2020. The overlap period (March 2020 through June 2021) reflects the gradual transition between platforms.",
+      "format": "csv",
+      "file_path": "data/communications/teams_calls_2018_2021.csv",
+      "origin_system": "Microsoft Teams",
+      "active_from": "2018-01-01",
+      "active_to": "2021-06-30",
+      "delimiter": ",",
+      "has_header": true
+    }
+  },
+  {
+    "id": "src_zoom",
+    "labels": ["DataSource"],
+    "properties": {
+      "name": "Zoom Meeting Logs",
+      "description": "Meeting records from the Zoom video conferencing platform. Records each meeting's host, start time, duration in minutes, full attendee list with email addresses, meeting type (instant, scheduled, or recurring), whether a recording was made, and the host's organizational unit. This became the company's primary video conferencing platform starting March 2020, initially overlapping with Microsoft Teams during the migration period through June 2021. After June 2021, Zoom is the sole video conferencing platform.",
+      "format": "json",
+      "file_path": "data/communications/zoom_meetings_2020_2024.json",
+      "origin_system": "Zoom",
+      "active_from": "2020-03-01",
+      "active_to": "2024-12-31"
+    }
+  },
+  {
+    "id": "src_legacy_hr",
+    "labels": ["DataSource"],
+    "properties": {
+      "name": "Legacy HRIS Employee Records",
+      "description": "Employee records from the company's original Human Resource Information System, exported as annual snapshots. Contains employee demographics, department, job role, hire and termination dates, salary, performance ratings on a 1-5 integer scale, tenure, and overtime status. This system was used from company founding through 2021, when it was replaced by the modern HCM platform. The overlap period (July through December 2021) reflects the data migration cutover.",
+      "format": "csv",
+      "file_path": "data/hr/legacy_hris_2017_2021.csv",
+      "origin_system": "Legacy HRIS",
+      "active_from": "2017-01-01",
+      "active_to": "2021-12-31",
+      "delimiter": ",",
+      "has_header": true
+    }
+  },
+  {
+    "id": "src_modern_hr",
+    "labels": ["DataSource"],
+    "properties": {
+      "name": "Modern HCM Platform Records",
+      "description": "Employee records from the company's modern Human Capital Management platform, captured as quarterly snapshots. Contains richer data than the legacy system including worker identity, business unit, position title, start and end dates, base compensation, performance scores on a 0.0-5.0 continuous scale, employee engagement index (0-100), skills inventory, manager relationships, learning completion counts, and effective dates for each record. Replaced the legacy HRIS starting July 2021.",
+      "format": "json",
+      "file_path": "data/hr/modern_hcm_2021_2024.json",
+      "origin_system": "Modern HCM Platform",
+      "active_from": "2021-07-01",
+      "active_to": "2024-12-31"
+    }
+  },
+  {
+    "id": "src_tickets",
+    "labels": ["DataSource"],
+    "properties": {
+      "name": "Project Management Tickets",
+      "description": "Issue and task tracking records from the company's Jira-style project management system. Contains ticket identifiers, summaries, descriptions, workflow status (Open, In Progress, Done, Closed), priority levels, assignee and reporter email addresses, project codes, sprint assignments, creation and resolution dates, story point estimates, labels for categorization, and component tags. Covers software engineering, infrastructure, security, and documentation projects across multiple teams.",
+      "format": "parquet",
+      "file_path": "data/projects/project_tickets.parquet",
+      "origin_system": "Project Management System",
+      "active_from": "2019-01-01",
+      "active_to": "2024-12-31"
+    }
+  }
+]
