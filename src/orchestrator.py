@@ -5,6 +5,7 @@ Manages the LLM, AstraeaDB metadata discovery, and DuckDB data queries.
 """
 
 import argparse
+import hashlib
 import json
 import sys
 import time
@@ -15,6 +16,7 @@ import config
 from src import display
 from src.duckdb_tools import get_tools, tool_list_data_sources, tool_preview_data_source, tool_query_data_source
 from src.embeddings import check_ollama_available, embed_text
+from src.eunomia_bridge import EunomiaBridge, MetricsCollector
 from src.mcp_bridge import DirectBridge
 
 # LLM client setup
@@ -191,6 +193,17 @@ class DemoOrchestrator:
             self._astraea_available = False
             self._load_id_map_from_file()
 
+        # Eunomia working-memory cache in front of the three metadata tools.
+        # Disabled (no-op) unless EUNOMIA_URL is set; metrics are collected
+        # either way so the disabled run becomes the "before" baseline.
+        self.eunomia = EunomiaBridge()
+        self.metrics = MetricsCollector()
+        if self.eunomia.enabled:
+            print(f"  Eunomia: enabled (url={self.eunomia.url}, "
+                  f"sim≥{self.eunomia.sim_threshold})")
+        else:
+            print("  Eunomia: disabled (set EUNOMIA_URL to enable metadata cache)")
+
     def _build_source_map(self):
         """Build a mapping from source names to AstraeaDB node IDs."""
         with open(config.METADATA_DIR / "sources.json") as f:
@@ -243,31 +256,47 @@ class DemoOrchestrator:
         elif name == "search_catalog":
             query_text = arguments["query"]
             k = arguments.get("k", 10)
+            # Embed the query. If Ollama is down we skip the cache entirely
+            # (without an embedding there's nothing to key the cache on) and
+            # fall straight to the all-sources fallback.
             try:
                 query_vec = embed_text(query_text)
-                results = self.db.vector_search(query_vec, k=k)
-                return json.dumps(results, indent=2, default=str)
             except Exception as e:
-                # Fallback: return all source metadata so the LLM can still work
-                try:
-                    with open(config.METADATA_DIR / "sources.json") as f:
-                        sources = json.load(f)
-                    fallback = []
-                    for src in sources:
-                        p = src["properties"]
-                        fallback.append({
-                            "name": p["name"],
-                            "description": p.get("description", "")[:300],
-                            "format": p["format"],
-                            "active_from": p.get("active_from"),
-                            "active_to": p.get("active_to"),
-                        })
-                    return json.dumps({
-                        "note": f"Semantic search unavailable ({e}). Returning all sources for manual review.",
-                        "sources": fallback,
-                    }, indent=2, default=str)
-                except Exception:
-                    return json.dumps({"error": f"Catalog search failed: {e}. Use list_data_sources instead."})
+                return self._search_catalog_fallback(error=f"embedding: {e}")
+
+            # Semantic cache check — a hit here means a prior query with a
+            # semantically-similar embedding has been answered already.
+            t0 = time.perf_counter()
+            cached = self.eunomia.recall_semantic(
+                query_vec, min_k=k, tag="search_catalog"
+            )
+            if cached is not None:
+                self.metrics.record(
+                    "search_catalog", True, "eunomia",
+                    (time.perf_counter() - t0) * 1000,
+                )
+                return cached
+
+            # Miss: try AstraeaDB; on failure, use the all-sources fallback.
+            # Either path takes a "miss"-shaped sample so the report reflects
+            # what the LLM would have paid without the cache.
+            t0 = time.perf_counter()
+            try:
+                if self.db is None:
+                    raise RuntimeError("AstraeaDB unavailable")
+                results = self.db.vector_search(query_vec, k=k)
+                result_str = json.dumps(results, indent=2, default=str)
+            except Exception as e:
+                result_str = self._search_catalog_fallback(error=str(e))
+            self.metrics.record(
+                "search_catalog", False, "astraea",
+                (time.perf_counter() - t0) * 1000,
+            )
+            cache_id = "sc:" + hashlib.sha1(query_text.encode()).hexdigest()[:16]
+            self.eunomia.store_semantic(
+                cache_id, query_vec, result_str, k=k, tag="search_catalog",
+            )
+            return result_str
 
         elif name == "get_source_details":
             return self._get_source_details(arguments["source_name"])
@@ -278,8 +307,51 @@ class DemoOrchestrator:
         else:
             return json.dumps({"error": f"Unknown tool: {name}"})
 
+    def _search_catalog_fallback(self, *, error: str) -> str:
+        """Return all source metadata when AstraeaDB / Ollama isn't reachable."""
+        try:
+            with open(config.METADATA_DIR / "sources.json") as f:
+                sources = json.load(f)
+            fallback = []
+            for src in sources:
+                p = src["properties"]
+                fallback.append({
+                    "name": p["name"],
+                    "description": p.get("description", "")[:300],
+                    "format": p["format"],
+                    "active_from": p.get("active_from"),
+                    "active_to": p.get("active_to"),
+                })
+            return json.dumps({
+                "note": f"Semantic search unavailable ({error}). Returning all sources for manual review.",
+                "sources": fallback,
+            }, indent=2, default=str)
+        except Exception:
+            return json.dumps({"error": f"Catalog search failed: {error}. Use list_data_sources instead."})
+
     def _get_source_details(self, source_name: str) -> str:
-        """Get full details about a data source from the metadata graph."""
+        """Get full details about a data source. Cache-fronted by Eunomia."""
+        cache_key = f"src_details:{source_name}"
+        t0 = time.perf_counter()
+        cached = self.eunomia.get_exact(cache_key)
+        if cached is not None:
+            self.metrics.record(
+                "get_source_details", True, "eunomia",
+                (time.perf_counter() - t0) * 1000,
+            )
+            return cached
+
+        t0 = time.perf_counter()
+        result = self._compute_source_details(source_name)
+        self.metrics.record(
+            "get_source_details", False, "astraea",
+            (time.perf_counter() - t0) * 1000,
+        )
+        self.eunomia.store_exact(cache_key, result, tags=["get_source_details"])
+        return result
+
+    def _compute_source_details(self, source_name: str) -> str:
+        """Compute source details from the metadata graph (or the file fallback)."""
         node_id = self._source_node_map.get(source_name)
 
         # Try AstraeaDB first
@@ -339,7 +411,28 @@ class DemoOrchestrator:
             return json.dumps({"error": str(e)})
 
     def _find_related_sources(self, source_name: str) -> str:
-        """Find sources related to the given one via the graph."""
+        """Find sources related to ``source_name``. Cache-fronted by Eunomia."""
+        cache_key = f"src_related:{source_name}"
+        t0 = time.perf_counter()
+        cached = self.eunomia.get_exact(cache_key)
+        if cached is not None:
+            self.metrics.record(
+                "find_related_sources", True, "eunomia",
+                (time.perf_counter() - t0) * 1000,
+            )
+            return cached
+
+        t0 = time.perf_counter()
+        result = self._compute_related_sources(source_name)
+        self.metrics.record(
+            "find_related_sources", False, "astraea",
+            (time.perf_counter() - t0) * 1000,
+        )
+        self.eunomia.store_exact(cache_key, result, tags=["find_related_sources"])
+        return result
+
+    def _compute_related_sources(self, source_name: str) -> str:
+        """Compute related sources from the graph (or the file fallback)."""
         node_id = self._source_node_map.get(source_name)
 
         # Try AstraeaDB first
@@ -561,7 +654,7 @@ class DemoOrchestrator:
                     "tools": ollama_tools,
                     "stream": False,
                 },
-                timeout=120.0,
+                timeout=600.0,
             )
             response.raise_for_status()
             msg = response.json()["message"]
@@ -622,7 +715,7 @@ class DemoOrchestrator:
                     "messages": messages,
                     "stream": False,
                 },
-                timeout=120.0,
+                timeout=600.0,
             )
             response.raise_for_status()
             reply = (response.json()["message"].get("content") or "").strip()
@@ -866,7 +959,16 @@ def main():
         config.INTERACTIVE_PAUSE = True
 
     orchestrator = DemoOrchestrator()
-    orchestrator.run(args.mode)
+    try:
+        orchestrator.run(args.mode)
+    finally:
+        # Always print whatever metadata-call samples were collected, even on
+        # KeyboardInterrupt during interactive chat — these are the numbers
+        # that show the cache pulling its weight (or that say it never ran).
+        report = orchestrator.metrics.report()
+        if report:
+            print(report)
+        orchestrator.eunomia.close()
 
 
 if __name__ == "__main__":

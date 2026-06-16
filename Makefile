@@ -3,8 +3,14 @@ ASTRAEA_BIN ?= astraeadb
 ASTRAEA_PORT ?= 7687
 ASTRAEA_UI_DIR ?= /Users/jimharris/Documents/astraea-UI
 
+EUNOMIA_BIN ?= /Users/jimharris/Documents/astraea-development/projects/eunomia/target/release/eunomia
+EUNOMIA_CONFIG ?= eunomia.toml
+EUNOMIA_PORT ?= 8137
+EUNOMIA_URL ?= http://127.0.0.1:$(EUNOMIA_PORT)
+
 .PHONY: help deps generate-data embeddings start-astraea ingest validate setup \
-        demo narrated interactive test clean stop-astraea ui
+        demo narrated interactive test clean stop-astraea ui \
+        start-eunomia stop-eunomia bench-eunomia demo-eunomia
 
 help:  ## Show available targets
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -60,6 +66,27 @@ narrated: start-astraea  ## Run only the narrated walkthrough
 
 interactive: start-astraea  ## Run only the interactive chat
 	$(PYTHON) -m src.orchestrator --mode interactive
+
+# --- Eunomia working-memory cache (in front of the metadata calls) ---
+
+start-eunomia:  ## Start Eunomia cache (background)
+	@if lsof -i :$(EUNOMIA_PORT) -sTCP:LISTEN >/dev/null 2>&1; then \
+		echo "Eunomia already running on port $(EUNOMIA_PORT)"; \
+	else \
+		[ -x $(EUNOMIA_BIN) ] || { echo "ERROR: Eunomia binary not found at $(EUNOMIA_BIN). Build with: cargo build --release -p eunomia-server"; exit 1; }; \
+		$(EUNOMIA_BIN) --config $(EUNOMIA_CONFIG) >eunomia.log 2>&1 & \
+		sleep 1; \
+		echo "Eunomia started on port $(EUNOMIA_PORT) (logs: eunomia.log)"; \
+	fi
+
+stop-eunomia:  ## Stop Eunomia
+	@-pkill -f "$(EUNOMIA_BIN)" 2>/dev/null && echo "Eunomia stopped" || echo "Eunomia not running"
+
+bench-eunomia: start-eunomia  ## Replay a representative metadata trace; print before/after numbers
+	EUNOMIA_URL=$(EUNOMIA_URL) $(PYTHON) scripts/bench_eunomia.py
+
+demo-eunomia: start-astraea start-eunomia  ## Run the full demo with Eunomia caching enabled
+	EUNOMIA_URL=$(EUNOMIA_URL) $(PYTHON) -m src.orchestrator --mode full
 
 # --- Optional: Astraea UI ---
 

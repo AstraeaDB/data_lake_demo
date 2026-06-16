@@ -9,3 +9,6 @@ build/
 *.duckdb
 *.duckdb.wal
 .DS_Store
+
+# Runtime artifacts from `make start-eunomia`
+eunomia.log
