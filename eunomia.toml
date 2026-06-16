@@ -1,0 +1,26 @@
+# Eunomia config for the data-lake demo's metadata cache.
+#
+# Eunomia sits in front of the orchestrator's metadata calls to AstraeaDB
+# (`search_catalog` / `get_source_details` / `find_related_sources`). The
+# `default` namespace's dim must match the demo's embedding pipeline
+# (`embeddinggemma` truncated to 128 via Matryoshka, L2-normalised).
+#
+# Picked a non-default port (8137) so this can run side-by-side with another
+# Eunomia instance and never clash with the Anthropic / Ollama defaults.
+
+rest_addr = "127.0.0.1:8137"
+grpc_addr = "127.0.0.1:50151"
+
+# Background TTL eviction every 60 s — entries stored with ttl_secs=3600
+# disappear an hour after their last write. Set to 0 to disable the sweeper.
+ttl_sweep_secs = 60
+
+[[namespaces]]
+name = "default"
+dim = 128
+api_key = "dev-key"
+
+# Standalone in-memory cache — no AstraeaDB write-behind tiering. The catalog
+# in AstraeaDB is the source of truth; Eunomia is pure working memory.
+[tiering]
+backend = "in_memory"
